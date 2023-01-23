@@ -1,0 +1,36 @@
+.deletePopup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    border: 2px solid black;
+    padding: 1rem;
+    background-color: azure;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.3rem 2rem;
+}
+
+.button{
+    background: none;
+    border: 1px solid black;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+
+.paragraph {
+    margin-top: 0.4rem;
+}
+
+.shown{
+    visibility: visible;
+}
+
+.notShown{
+    visibility: hidden;
+}

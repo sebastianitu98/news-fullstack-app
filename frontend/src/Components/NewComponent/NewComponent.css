@@ -1,0 +1,38 @@
+.newComponent {
+    border: 1px solid black;
+    height: 12rem;
+    position: relative;
+}
+
+.newHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.componentButton{
+    padding: 0;
+    border: none;
+    background: none;
+    border: 2px solid black;
+    width: 30px;
+    height: auto;
+    margin-top: 2px;
+    margin-right: 2px;
+    font-size: x-large;    
+    cursor: pointer;
+    min-width: 30px;
+}
+
+.newTitle{
+    margin: 0rem 0.3rem;
+    max-width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.newContent {
+    margin: 0rem 0.4rem;
+    height: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
