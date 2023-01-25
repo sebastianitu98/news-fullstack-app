@@ -4,7 +4,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 70%;
-    border: 2px solid black;
+    border: 1px solid black;
+    border-radius: 10%;
     padding: 1rem;
     background-color: azure;
     text-align: center;
@@ -13,24 +14,38 @@
 .buttons {
     display: flex;
     justify-content: space-between;
-    margin: 0.3rem 2rem;
+    margin: 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
 }
 
 .button{
     background: none;
-    border: 1px solid black;
-    padding: 0.3rem;
+    border: 1px solid rgba(27, 31, 35, .15);
+    padding: 0.4rem;
     cursor: pointer;
+    border-radius: 20%;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.yes-btn {
+    background-color: #2ea44f;
+}
+
+.no-btn {
+    background-color: #d34c2b;
+}
+
+.yes-btn:hover {
+    background-color: #1a4e29;
+}
+
+.no-btn:hover{
+    background-color: #860000;
 }
 
 .paragraph {
-    margin-top: 0.4rem;
-}
-
-.shown{
-    visibility: visible;
-}
-
-.notShown{
-    visibility: hidden;
+    margin-top: 0.1rem;
 }

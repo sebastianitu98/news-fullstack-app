@@ -1,7 +1,8 @@
 .App {
   margin: 0;
   height: 100vh;
-  background-color: rgb(207, 207, 207);
+  background: rgb(167,134,195);
+  background: linear-gradient(56deg, rgba(167,134,195,1) 0%, rgba(204,106,96,1) 51%, rgba(231,157,197,1) 100%);
   position: relative;
   z-index: 1;
 }
@@ -12,7 +13,8 @@
   top: 10%;
   left: 50%;
   transform: translate(-50%,0);
-  background-color: grey;
+  background-color: rgb(129, 186, 209);
+  border-radius: 25px;
 }
 
 .display-block {

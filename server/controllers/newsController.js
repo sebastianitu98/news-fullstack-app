@@ -5,11 +5,11 @@ const New = require("../models/newsModel")
 const getNews = async (req, res) => {
     try{
         const news = await New.find().sort({createdAt: -1})
-        const date = new Date().getTime()
+        const date = new Date()
         
         const newNews = news.filter( element => {
-            const elementDate = new Date(element.expireDate)
-            return elementDate.getTime() < date
+            let elementDate = new Date(element.expireDate)
+            return (date.getTime() - elementDate.getTime() < 0 )
         })
         
         res.status(200).json(newNews)
@@ -43,6 +43,7 @@ const createNew = async (req, res) => {
 
 //controller to delete a new ()
 const deleteNew = async (req, res) => {
+       
     const { id } = req.params
 
     if(!mongoose.Types.ObjectId.isValid(id)) {
@@ -56,6 +57,7 @@ const deleteNew = async (req, res) => {
     }
 
     res.status(200).json(newNew)
+    
 }
 
 

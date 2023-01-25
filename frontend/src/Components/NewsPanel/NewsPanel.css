@@ -1,7 +1,7 @@
 .newsPanel {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
     gap: 1rem;
     padding: 1rem;
 }

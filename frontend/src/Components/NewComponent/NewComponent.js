@@ -7,6 +7,12 @@ function NewComponent({element}) {
 
   const { dispatch } = useNewsContext()
 
+  const [showPopup, setShowPopup] = useState(false)
+  const [showContentPopup , setShowContentPopup] = useState(false)
+
+  const togglePopup = () => { setShowPopup(!showPopup) }
+  const toggleContentPopup = () => { setShowContentPopup(!showContentPopup) }
+
   const handleDelete = async () => {
     const response = await fetch('/api/news/' + element._id, {
       method: 'DELETE'
@@ -19,18 +25,18 @@ function NewComponent({element}) {
     }
   }
 
-  const [showPopup, setShowPopup] = useState(false)
-  const togglePopup = () => { setShowPopup(!showPopup) }
+  
 
   return (
     <div className='newComponent'>
         <div className="newHeader">
             <h2 className='newTitle'>{element.title}</h2>
-            <button className='componentButton' onClick={togglePopup}><strong>-</strong></button>
+            <button className='componentButton' onClick={togglePopup} title='Delete NEW'><strong>-</strong></button>
         </div>
         <DeletePopup handleDelete={handleDelete} togglePopup={togglePopup} showPopup={showPopup}/>
-        <div className="newContent">
-            <span className='newContentText'>{element.content}</span>
+        <div className="newContent" onClick={toggleContentPopup}>
+            <span className='newContentText' title='Read more'> {element.content} </span>
+            <span className={showContentPopup ? "contentPopup shown" : "contentPopup notShown"}> {element.content} </span>
         </div>
     </div>
   )

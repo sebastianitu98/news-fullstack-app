@@ -8,8 +8,8 @@ function DeletePopup({handleDelete, togglePopup, showPopup}) {
         <p className='paragraph'>Are you sure?</p>
         <p className='paragraph'>Your action will delete the NEW!!</p>
         <div className="buttons">
-            <button className='button' onClick={handleDelete}>YES</button>
-            <button className='button' onClick={togglePopup}>NO</button>
+            <button className='button yes-btn' onClick={handleDelete}>YES</button>
+            <button className='button no-btn' onClick={togglePopup}>NO</button>
         </div>
     </div>
   )

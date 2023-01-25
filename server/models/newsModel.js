@@ -17,6 +17,11 @@ const newsSchema = mongoose.Schema(
         expireDate: {
             type: String,
             required: [true, 'Date is mandatory']
+        },
+        canBeRemoved: {
+            type: Boolean,
+            required: false,
+            default: true
         }
     },
     {

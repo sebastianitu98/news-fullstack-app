@@ -3,10 +3,15 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    background-color: rgba(204,106,96,0.1);
 }
 
 .title {
     padding: 0.5rem;
+    font-weight: 500;
+    font-family: Courier;
+    margin-left: 1rem;
+    color: rgb(198, 255, 255);
 }
 
 .addNew{
