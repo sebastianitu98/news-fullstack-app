@@ -1,6 +1,7 @@
 .newComponent {
     border: 1px solid rgb(199, 199, 199);
-    width: 270px;
+    min-width: 270px;
+    max-width: 270px;
     border-radius: 10%;
     padding: 0.3rem;
     margin: 0 auto;
@@ -32,7 +33,7 @@
 
 .newTitle{
     margin: 0rem 0.3rem;
-    max-width: 80%;
+    width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -55,7 +56,7 @@
     padding: 1rem;
     overflow: hidden;
     z-index: 4;
-    top: 30%;
+    top: 20%;
     left: 5%;
     width: 240px;
     max-width: 250px;
@@ -69,4 +70,43 @@
 
 .notShown {
     visibility: hidden;
+}
+
+.errorPopup {
+    position: absolute;
+    width: 250px;
+    top: 5%;
+    left: 3%;
+    padding: 0.4rem;
+    border-radius: 10%;
+    background-color: rgb(255, 72, 0);
+    color:rgb(0, 0, 0);
+    z-index: 6;
+    text-align: center;
+}
+
+.errorText{
+    margin-top: 0.2rem;
+}
+
+.errorButton {
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.1rem;
+    width: 3rem;
+    border-radius: 10%;
+    background-color: rgb(255, 242, 57);
+}
+
+.errorButton:hover{
+    background-color: rgb(204, 173, 0);
+}
+
+.green-border {
+    border: 3px solid green;
+}
+
+.red-border {
+    border: 3px solid red;
 }

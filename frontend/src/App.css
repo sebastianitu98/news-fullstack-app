@@ -1,8 +1,8 @@
 .App {
   margin: 0;
-  height: 100vh;
-  background: rgb(167,134,195);
-  background: linear-gradient(56deg, rgba(167,134,195,1) 0%, rgba(204,106,96,1) 51%, rgba(231,157,197,1) 100%);
+  min-height: 100vh;
+  height: fit-content;
+  background: linear-gradient(0deg, rgba(158,123,57,1) 0%, rgba(183,131,120,1) 31%, rgba(207,139,180,1) 66%, rgba(140,140,212,1) 100%, rgba(98,20,158,1) 100%);;
   position: relative;
   z-index: 1;
 }

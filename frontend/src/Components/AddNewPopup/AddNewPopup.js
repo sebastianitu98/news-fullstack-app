@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { useNewsContext } from '../../hooks/useNewsContext'
 import './AddNewPopup.css'
 
@@ -31,6 +31,7 @@ function AddNewPopup({popupAction}) {
         if(!response.ok) {
             setError(json.error)
             setEmptyFields(json.emptyFields)
+            console.log(error)
         } else {
         setTitle('')
         setUploadDate('')

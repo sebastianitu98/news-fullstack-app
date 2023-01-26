@@ -4,7 +4,7 @@ const New = require("../models/newsModel")
 //controller to get all news (GET)
 const getNews = async (req, res) => {
     try{
-        const news = await New.find().sort({createdAt: -1})
+        const news = await New.find()
         const date = new Date()
         
         const newNews = news.filter( element => {
@@ -43,7 +43,6 @@ const createNew = async (req, res) => {
 
 //controller to delete a new ()
 const deleteNew = async (req, res) => {
-       
     const { id } = req.params
 
     if(!mongoose.Types.ObjectId.isValid(id)) {
@@ -56,10 +55,8 @@ const deleteNew = async (req, res) => {
         return res.status(400).json({error: 'No such New'})
     }
 
-    res.status(200).json(newNew)
-    
+    res.status(200).json(newNew)    
 }
-
 
 
 //export controller functions
