@@ -34,7 +34,7 @@ function App() {
 
       {news && <NewsPanel news={news}/>}
 
-      <div className={addNewPopupVisibility ? 'addNewPopupElement display-block' : 'addNewPopupElement display-none'}>
+      <div className={addNewPopupVisibility ? 'addNewPopupElement visibile' : 'addNewPopupElement hidden'}>
         <AddNewPopup popupAction={popupAction}/>
       </div>
       

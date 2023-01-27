@@ -17,10 +17,10 @@
   border-radius: 25px;
 }
 
-.display-block {
-  display: block;
+.visible{
+  visibility: visible;
 }
 
-.display-none {
-  display: none;
+.hidden {
+  visibility: hidden;
 }
