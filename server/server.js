@@ -4,7 +4,7 @@ const express = require('express');
 const New = require('./models/newsModel');
 const {createNew, getNews, deleteNew} = require('./controllers/newsController')
 
-const PORT = '5000'
+const PORT = '80'
 
 const app = express()
 app.use(express.json())
