@@ -57,7 +57,7 @@ function AddNewPopup({popupAction}) {
 
             <div className="addNewPopupButtons">
                 <button className='closePopupButton' type="reset" onClick={popupAction}>Close</button>
-                <button className='addNewButton' type="submit">Add</button>
+                <button className='addNewButton' type="submit" onClick={popupAction}>Add</button>
             </div>
         </form>
     </div>

@@ -20,7 +20,7 @@ function App() {
       }
     }
     getData()
-  })
+  },[dispatch])
 
   const appElement = useRef(null)
   
